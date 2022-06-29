@@ -8,7 +8,16 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <title>Larona</title>
+    <!-- Meta -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Larona Cloud</title>
+
+    <!--  Chrome, WP, Safari header color  -->
+    <meta name="theme-color" content="#3BB001" />
+    <meta name="msapplication-navbutton-color" content="#3BB001" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3BB001" />
 
     <!-- vendor css -->
     <link
@@ -42,14 +51,53 @@
       }
     </style>
   </head>
-
   <body class="az-body">
     <div class="az-signup-wrapper">
+      <div
+        class="az-column-signup-left"
+        style="
+          background: no-repeat url('index_css/Login/img/login_image.png');
+          background-size: cover;
+        "
+      >
+        <!---->
+        <!-- Image Left Container -->
+        <div class="image-holder d-flex justify-content-center">
+          <!---->
+          <!-- Image Left SlideShow -->
+          <div class="slideshow my-auto">
+            <!-- Image -->
+            <img src="index_css/Login/img/26_pancasila.png" />
+          </div>
+
+          <!-- Image Left SlideShow -->
+          <div class="slideshow my-auto">
+            <!-- Image -->
+            <img src="index_css/Login/img/26_laut.png" />
+          </div>
+
+          <!-- Image Left SlideShow -->
+          <div class="slideshow my-auto">
+            <!-- Image -->
+            <img src="index_css/Login/img/26_hut_jakarta.png" />
+          </div>
+
+          <!-- Image Left SlideShow -->
+          <div class="slideshow my-auto">
+            <!-- Link -->
+            <a href="http://instagram.com/larona.id" target="blank">
+              <!-- Image -->
+              <img src="index_css/Login/img/flwus1.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- az-column-signup-left -->
       <div class="az-column-signup">
         <h1 class="az-logo">
-          <a href="http://larona.id">
-            <img src="index_css/Login/img/logo.png" class="brand-logo" />
-          </a>
+          <a href="http://larona.id"
+            ><img src="index_css/Login/img/logo.png" class="brand-logo"
+          /></a>
         </h1>
 
         <div class="az-signup-header">
@@ -66,7 +114,6 @@
                 placeholder="Enter your email"
               />
             </div>
-
             <!-- form-group -->
             <div class="form-group">
               <label>User ID</label>
@@ -77,7 +124,6 @@
                 placeholder="Enter your username"
               />
             </div>
-
             <!-- form-group -->
             <div class="form-group">
               <label>Password</label>
@@ -88,7 +134,6 @@
                 placeholder="Enter your password"
               />
             </div>
-
             <!-- form-group -->
             <div class="form-group">
               <label>Company</label>
@@ -99,12 +144,10 @@
                 placeholder="Enter your company"
               />
             </div>
-
             <!-- form-group -->
             <div>
-              <input type="text" name="LW_prgno" value="Login" />
+              <input type="hidden" name="LW_prgno" value="Login" />
             </div>
-
             <div class="mt-4">
               <button class="btn btn-success btn-block">Login</button>
             </div>
