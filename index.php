@@ -23,12 +23,12 @@
       </ul>
     </div> -->
 
-    <div class="leftWrapper">
+    <div class="col-form-left">
       <h1>The City</h1>
       <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
     </div>
 
-    <div class="formWrapper">
+    <div class="col-form right">
       <form action="cgi-bin/lnweb" method="post">
         <div class="imgContainer">
           <img src="./src/assets/images/logo.png" alt="Logo" class="logo" />

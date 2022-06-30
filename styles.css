@@ -10,7 +10,7 @@ body {
   background-color: #f5f5f5;
 }
 
-.formWrapper {
+form {
   border-radius: 5px;
   background-color: #ffffff;
   padding: 10px;
@@ -120,12 +120,13 @@ input[type="submit"]:hover {
 .col-2 {
   width: 16.66%;
 }
-.formWrapper {
-  width: 50%;
-  max-width: 500px;
+.col-form {
+  /* min-width: 50%; */
+  width: 500px;
 }
-.leftWrapper {
-  width: 50%;
+.col-form-left {
+  /* min-width: 50%; */
+  max-width: 50%;
 }
 .col-4 {
   width: 33.33%;
@@ -157,10 +158,10 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  [class*="formWrapper"] {
+  [class*="col-form"] {
     width: 100%;
   }
-  [class*="leftWrapper"] {
+  [class*="col-form-left"] {
     display: none;
   }
 }
