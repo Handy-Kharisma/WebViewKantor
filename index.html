@@ -1,124 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Larona</title>
-
-    <!-- vendor css -->
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="shortcut icon"
       type="image/png"
-      href="index_css/Login/img/logo_shortcut.png"
+      href="./src/assets/images/logo_icon.png"
     />
-    <link
-      href="index_css/Login/lib/fontawesome-free/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="index_css/Login/lib/ionicons/css/ionicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="index_css/Login/lib/typicons.font/typicons.css"
-      rel="stylesheet"
-    />
-
-    <!-- azia CSS -->
-    <link rel="stylesheet" href="index_css/Login/css/azia.css" />
-    <style>
-      @media only screen and (max-width: 600px) {
-        /* For mobile phones: */
-        [class*="az-column-signup"] {
-          width: 100%;
-          background: url("index_css/Login/img/login_image.png") no-repeat;
-          background-size: cover;
-        }
-      }
-    </style>
   </head>
 
-  <body class="az-body">
-    <div class="az-signup-wrapper">
-      <div class="az-column-signup">
-        <h1 class="az-logo">
-          <a href="http://larona.id">
-            <img src="index_css/Login/img/logo.png" class="brand-logo" />
-          </a>
-        </h1>
-
-        <div class="az-signup-header">
-          <h2>LARONA CLOUD</h2>
-          <h4>Please input your username and password to login.</h4>
-
-          <form action="cgi-bin/lnweb" method="post">
-            <div class="form-group">
-              <label>User Email</label>
-              <input
-                type="text"
-                class="form-control"
-                name="LW_usrEmail"
-                placeholder="Enter your email"
-              />
-            </div>
-
-            <!-- form-group -->
-            <div class="form-group">
-              <label>User ID</label>
-              <input
-                type="text"
-                class="form-control"
-                name="LW_user"
-                placeholder="Enter your username"
-              />
-            </div>
-
-            <!-- form-group -->
-            <div class="form-group">
-              <label>Password</label>
-              <input
-                type="password"
-                class="form-control"
-                name="LW_pass"
-                placeholder="Enter your password"
-              />
-            </div>
-
-            <!-- form-group -->
-            <div class="form-group">
-              <label>Company</label>
-              <input
-                type="text"
-                class="form-control"
-                name="LW_comp"
-                placeholder="Enter your company"
-              />
-            </div>
-
-            <!-- form-group -->
-            <div>
-              <input type="text" name="LW_prgno" value="Login" />
-            </div>
-
-            <div class="mt-4">
-              <button class="btn btn-success btn-block">Login</button>
-            </div>
-          </form>
-        </div>
-        <!-- az-signup-header -->
+  <body>
+    <form action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="./src/assets/images/logo.png" alt="Avatar" class="avatar" />
       </div>
-      <!-- az-column-signup -->
-    </div>
-    <!-- az-signup-wrapper -->
 
-    <script src="index_css/Login/lib/jquery/jquery.min.js"></script>
-    <script src="index_css/Login/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <div class="container">
+        <label for="LW_usrEmail"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="LW_usrEmail" />
 
-    <script src="index_css/Login/js/azia.js"></script>
+        <label for="LW_user"><b>User ID</b></label>
+        <input
+          type="text"
+          placeholder="Enter User ID"
+          name="LW_user"
+          required
+        />
+
+        <label for="LW_pass"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="LW_pass"
+          required
+        />
+
+        <label for="LW_comp"><b>Company</b></label>
+        <input
+          type="text"
+          placeholder="Enter Company"
+          name="LW_comp"
+          required
+        />
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" />
+          Remember me
+        </label>
+      </div>
+
+      <!-- <div class="container" style="background-color: #f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div> -->
+    </form>
   </body>
 </html>

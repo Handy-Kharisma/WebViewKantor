@@ -1,101 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-  <!-- Meta -->
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Meta -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-  <title>Larona Cloud</title>
+    <title>Larona Cloud</title>
 
-  <!--  Chrome, WP, Safari header color  -->
-  <meta name="theme-color" content="#3BB001">
-  <meta name="msapplication-navbutton-color" content="#3BB001">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#3BB001">
+    <!--  Chrome, WP, Safari header color  -->
+    <meta name="theme-color" content="#3BB001" />
+    <meta name="msapplication-navbutton-color" content="#3BB001" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3BB001" />
 
-  <!-- vendor css -->
-  <link rel="shortcut icon" type="image/png" href="index_css/Login/img/logo_shortcut.png"/>
-  <link href="index_css/Login/lib/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="index_css/Login/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="index_css/Login/lib/typicons.font/typicons.css" rel="stylesheet">
+    <!-- vendor css -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="index_css/Login/img/logo_shortcut.png"
+    />
+    <link
+      href="index_css/Login/lib/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="index_css/Login/lib/ionicons/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="index_css/Login/lib/typicons.font/typicons.css"
+      rel="stylesheet"
+    />
 
-  <!-- azia CSS -->
-  <link rel="stylesheet" href="index_css/Login/css/azia.css">
-<style>
-@media only screen and (max-width: 600px) {
-  /* For mobile phones: */
-  [class*="az-column-signup"] {
-    width: 100%;
-  background: url("index_css/Login/img/login_image.png") no-repeat;
-  background-size: cover;
-  }
-
-
-}
-
-</style>
-</head>
-<body class="az-body">
-
-  <div class="az-signup-wrapper">
-    <div class="az-column-signup-left" style="background: no-repeat url('index_css/Login/img/login_image.png'); background-size: cover;">
-      <div class="image-holder d-flex justify-content-center">
-        <div class="slideshow my-auto">
-          <img src="index_css/Login/img/26_pancasila.png">
-        </div>
-        <div class="slideshow my-auto">
-          <img src="index_css/Login/img/26_laut.png">
-        </div>
-        <div class="slideshow my-auto">
-          <img src="index_css/Login/img/26_hut_jakarta.png">
-        </div>
-      <div class="slideshow my-auto">
-          <a href="http://instagram.com/larona.id" target="blank"><img src="index_css/Login/img/flwus1.png"></a>
-      </div>
-      </div>
-    </div><!-- az-column-signup-left -->
-    <div class="az-column-signup">
-      <h1 class="az-logo"><a href="http://larona.id"><img src="index_css/Login/img/logo.png" class="brand-logo"></a></h1>
-    
-      <div class="az-signup-header">
-        <h2>LARONA CLOUD</h2>
-        <h4>Please input your username and password to login.</h4>
-
-        <form action="cgi-bin/lnweb" method="post">
-          <div class="form-group">
-            <label>User Email</label>
-            <input type="text" class="form-control" name="LW_usrEmail" placeholder="Enter your email">
-          </div><!-- form-group -->
-          <div class="form-group">
-            <label>User ID</label>
-            <input type="text" class="form-control" name="LW_user" placeholder="Enter your username">
-          </div><!-- form-group -->
-          <div class="form-group">
-            <label>Password</label>
-            <input type="password" class="form-control" name="LW_pass" placeholder="Enter your password">
-          </div><!-- form-group -->
-          <div class="form-group">
-            <label>Company</label>
-            <input type="text" class="form-control" name="LW_comp" placeholder="Enter your company">
-          </div><!-- form-group -->
-          <div>
-            <input type=hidden name="LW_prgno" value="Login">
+    <!-- azia CSS -->
+    <link rel="stylesheet" href="index_css/Login/css/azia.css" />
+    <style>
+      @media only screen and (max-width: 600px) {
+        /* For mobile phones: */
+        [class*="az-column-signup"] {
+          width: 100%;
+          background: url("index_css/Login/img/login_image.png") no-repeat;
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
+  <body class="az-body">
+    <div class="az-signup-wrapper">
+      <div
+        class="az-column-signup-left"
+        style="
+          background: no-repeat url('index_css/Login/img/login_image.png');
+          background-size: cover;
+        "
+      >
+        <div class="image-holder d-flex justify-content-center">
+          <div class="slideshow my-auto">
+            <img src="index_css/Login/img/26_pancasila.png" />
           </div>
-          <div class="mt-4">
-            <button class="btn btn-success btn-block">Login</button>
+          <div class="slideshow my-auto">
+            <img src="index_css/Login/img/26_laut.png" />
           </div>
-        </form>
-        
-      </div><!-- az-signup-header -->
-    </div><!-- az-column-signup -->
-  </div><!-- az-signup-wrapper -->
+          <div class="slideshow my-auto">
+            <img src="index_css/Login/img/26_hut_jakarta.png" />
+          </div>
+          <div class="slideshow my-auto">
+            <a href="http://instagram.com/larona.id" target="blank"
+              ><img src="index_css/Login/img/flwus1.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- az-column-signup-left -->
+      <div class="az-column-signup">
+        <h1 class="az-logo">
+          <a href="http://larona.id"
+            ><img src="index_css/Login/img/logo.png" class="brand-logo"
+          /></a>
+        </h1>
 
-  <script src="index_css/Login/lib/jquery/jquery.min.js"></script>
-  <script src="index_css/Login/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <div class="az-signup-header">
+          <h2>LARONA CLOUD</h2>
+          <h4>Please input your username and password to login.</h4>
 
-  <script src="index_css/Login/js/azia.js"></script>
-</body>
+          <form action="cgi-bin/lnweb" method="post">
+            <div class="form-group">
+              <label>User Email</label>
+              <input
+                type="text"
+                class="form-control"
+                name="LW_usrEmail"
+                placeholder="Enter your email"
+              />
+            </div>
+            <!-- form-group -->
+            <div class="form-group">
+              <label>User ID</label>
+              <input
+                type="text"
+                class="form-control"
+                name="LW_user"
+                placeholder="Enter your username"
+              />
+            </div>
+            <!-- form-group -->
+            <div class="form-group">
+              <label>Password</label>
+              <input
+                type="password"
+                class="form-control"
+                name="LW_pass"
+                placeholder="Enter your password"
+              />
+            </div>
+            <!-- form-group -->
+            <div class="form-group">
+              <label>Company</label>
+              <input
+                type="text"
+                class="form-control"
+                name="LW_comp"
+                placeholder="Enter your company"
+              />
+            </div>
+            <!-- form-group -->
+            <div>
+              <input type="hidden" name="LW_prgno" value="Login" />
+            </div>
+            <div class="mt-4">
+              <button class="btn btn-success btn-block">Login</button>
+            </div>
+          </form>
+        </div>
+        <!-- az-signup-header -->
+      </div>
+      <!-- az-column-signup -->
+    </div>
+    <!-- az-signup-wrapper -->
+
+    <script src="index_css/Login/lib/jquery/jquery.min.js"></script>
+    <script src="index_css/Login/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="index_css/Login/js/azia.js"></script>
+  </body>
 </html>
